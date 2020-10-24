@@ -7,7 +7,6 @@ from .models import *
 from django.http import Http404
 
 # Create your views here.
-
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)

@@ -4,9 +4,6 @@ from django.conf.urls.static import static
 from django.conf.urls import url,include
 from django.conf import settings
 
-
-
-
 urlpatterns=[
     url(r'^$', views.register, name='register'),
     url(r'accounts/', include('django.contrib.auth.urls')),
