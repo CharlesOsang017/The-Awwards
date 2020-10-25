@@ -12,3 +12,14 @@ class ProfileTestClass(TestCase):
     def  test_instance(self):
         self.assertTrue(isinstance(self.photo,Profile))  
 
+    # def test_save_method(self):
+    #     '''
+    #     Method to save profile
+        
+    #     '''
+    #     self.photo.save_user()
+    #     profile = Profile.objects.all()
+    #     self.assertTrue(len(profile)>0)
+
+# class Image(TestCase):
+#     def setUp(self):

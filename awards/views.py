@@ -81,9 +81,6 @@ def edit_prof(request):
         form = UpdateProfileForm()
         return render(request,'profile_edit.html',{'user':user,'form':form})
 
-
-
-
 @login_required(login_url='/accounts/login')
 def search(request):
     projects = Projects.objects.all()

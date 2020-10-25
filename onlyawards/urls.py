@@ -5,4 +5,5 @@ import awards
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('awards.links')),
+    
 ]
