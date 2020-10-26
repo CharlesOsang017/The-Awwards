@@ -8,6 +8,7 @@ class Profile(models.Model):
     profile_photo = models.ImageField(upload_to='profile/')
     bio = models.TextField(blank=True)
     user_id = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    info = models.TextField(blank=False, null=True )
 
     def __str__(self):
         return self.bio
@@ -39,6 +40,7 @@ class Projects(models.Model):
     github_repo = models.CharField(max_length=200, blank=True)
     url = models.CharField(max_length=50, blank=True)
     owner = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
+    info = models.CharField(max_length=50, blank=False)
 
     def __str__(self):
         return self.url

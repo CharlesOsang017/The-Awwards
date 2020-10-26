@@ -4,7 +4,7 @@ from .models import Projects, Profile
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ('profile_photo','bio')
+        fields = ('profile_photo','bio', 'info')
 
 class UploadForm(forms.ModelForm):
     class Meta:
