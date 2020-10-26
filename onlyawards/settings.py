@@ -36,7 +36,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'awards',
     'bootstrap3',
-    'star_ratings',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -185,5 +184,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'home'
-STAR_RATINGS_RANGE = 10
 django_heroku.settings(locals())
