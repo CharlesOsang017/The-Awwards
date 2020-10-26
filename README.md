@@ -26,7 +26,7 @@ The-Awwards is an application that allows you to upload your projects and be vie
 * Run *python3 manage.py runserver* to open the project in the server.
 
 ## Live link to the project
-
+https://awards25.herokuapp.com/
 
 ## Licence
 MIT
