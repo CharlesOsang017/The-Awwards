@@ -29,4 +29,4 @@ The-Awwards is an application that allows you to upload your projects and be vie
 https://awards25.herokuapp.com/
 
 ## Licence
-MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license/MIT)

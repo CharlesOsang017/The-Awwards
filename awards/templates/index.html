@@ -1,8 +1,11 @@
 {%load static%}
+{% load ratings %}
+
 <!DOCTYPE html>
 <html>
 <title>Awards</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="{% static 'star-ratings/css/star-ratings.css' %}">
 <link rel="stylesheet" href="static 'css/styles.css'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -59,13 +62,14 @@
                         <button class="btn btn-inf"><a href="{{project.url}}" >View site</a></button>
                         <p> Owner : {{project.owner}}</p>
                         <div class="w3-center "></div>
+                        <p>{% ratings project %}         </p>
                     </div>
                 </div>
             </div>
             {%endfor%}
             <!-- End page content -->      
 
-
+        <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
         <script>
             // Script to open and close sidebar

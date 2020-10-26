@@ -13,7 +13,9 @@ urlpatterns=[
     url(r'^post/', views.upload_form, name='post'),
     url(r'^profile/update/(\d+)$',views.edit_prof,name='update_profile'),
     url(r'^search/',views.search, name='search'),
-    url(r'^logout/$', auth_views.LogoutView, {"next_page": '/'})
+    url(r'^logout/$', auth_views.LogoutView, {"next_page": '/'}),
+    url(r'^ratings/', include('star_ratings.urls', namespace='ratings', app_name='ratings')),
+
 ]
 
 if settings.DEBUG:
